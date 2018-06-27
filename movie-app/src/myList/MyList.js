@@ -9,7 +9,7 @@ class MyList extends Component {
         <h5>
           Mi Lista
           <small className="text-muted pl-2">
-            <a href="#">Ver Todas</a>
+            <a href="">Ver Todas</a>
           </small>
         </h5>
         <div className="row">
