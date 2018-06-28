@@ -7,6 +7,7 @@ class Peliculas extends Component{
     return(
         <div className="container">
           <SearchComp/>
+          <h5>Peliculas</h5>
           <MovieComp/>
 
 
