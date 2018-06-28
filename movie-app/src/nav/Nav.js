@@ -12,23 +12,23 @@ class NavComp extends Component {
       <Router>
         <div>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Navbar</a>
+            <a className="navbar-brand">Navbar</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <Link to="/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+                  <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Peliculas" className="nav-link" href="#">Features</Link>
+                  <Link to="/Peliculas" className="nav-link">Peliculas</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Series" className="nav-link" href="#">Pricing</Link>
+                  <Link to="/Series" className="nav-link">Series</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to ="Mi-lista" className="nav-link disabled" href="#">Disabled</Link>
+                  <Link to ="Mi-lista" className="nav-link disabled">Mi Lista</Link>
                 </li>
               </ul>
             </div>
