@@ -18,6 +18,11 @@ class MyApi{
       params:{page:page}
     })
   );
+  getPopSeries = (page = 1)=>(
+    this.axios.get('/tv/popular',{
+      params:{page:page}
+    })
+  );
 }
 
 export default MyApi

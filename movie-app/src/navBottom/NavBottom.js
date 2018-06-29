@@ -4,12 +4,12 @@ class NavBottom extends Component{
   render(){
     return(
       <nav>
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link">Previous</a></li>
-          <li class="page-item"><a class="page-link">1</a></li>
-          <li class="page-item"><a class="page-link">2</a></li>
-          <li class="page-item"><a class="page-link">3</a></li>
-          <li class="page-item"><a class="page-link">Next</a></li>
+        <ul className="pagination">
+          <li className="page-item"><a className="page-link">Previous</a></li>
+          <li className="page-item"><a className="page-link">1</a></li>
+          <li className="page-item"><a className="page-link">2</a></li>
+          <li className="page-item"><a className="page-link">3</a></li>
+          <li className="page-item"><a className="page-link">Next</a></li>
         </ul>
       </nav>
     )

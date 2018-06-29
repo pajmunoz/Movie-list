@@ -25,7 +25,6 @@ class PopList extends Component {
       }).catch((error)=>{
         this.setState({loading:false, error:error, items:[]});
       })
-
   }
   render(){
 
@@ -37,19 +36,15 @@ class PopList extends Component {
         {!!error && <div>{error}</div>}
         {!!items.length &&
           <div>
-            <h5>
-              Películas más populares
-              <small className="text-muted pl-2">
-                <a href="">Ver Todas</a>
-              </small>
-            </h5>
-            <div className="row">
-              {items.map(item => (
-                <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.original_title}>
-                  <img src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
-                </div>
-              ))}
-            </div>
+            <MyMovie movieList={items.slice(0,6).map(item => (
+              <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.original_title}>
+                <img src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
+              </div>
+            ))} movieListFull={items.map(item => (
+              <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.original_title}>
+                <img src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
+              </div>
+            ))}></MyMovie>
           </div>
         }
       </div>

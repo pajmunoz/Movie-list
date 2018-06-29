@@ -11,7 +11,19 @@ class Home extends Component{
         <div className="container">
           <SearchComp/>
           <MyList/>
+          <h5>
+            Películas más populares
+            <small className="text-muted pl-2">
+              <a href="">Ver Todas</a>
+            </small>
+          </h5>
           <PopList/>
+          <h5>
+            Series más populares
+            <small className="text-muted pl-2">
+              <a href="">Ver Todas</a>
+            </small>
+          </h5>
           <PopSeriesList/>
         </div>
       </div>
