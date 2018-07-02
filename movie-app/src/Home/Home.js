@@ -17,14 +17,14 @@ class Home extends Component{
               <a href="">Ver Todas</a>
             </small>
           </h5>
-          <PopList/>
+          <PopList cantidad="6"/>
           <h5>
             Series más populares
             <small className="text-muted pl-2">
               <a href="">Ver Todas</a>
             </small>
           </h5>
-          <PopSeriesList/>
+          <PopSeriesList cantidad="6"/>
         </div>
       </div>
     )

@@ -9,10 +9,7 @@ class MovieComp extends Component{
     return(
       <div>
         <Filter/>
-
-        <div className="row">
-          <PopList/>
-        </div>
+        <PopList/>
         <NavBottom/>
       </div>
     )

@@ -9,8 +9,6 @@ class Peliculas extends Component{
           <SearchComp/>
           <h5>Peliculas</h5>
           <MovieComp/>
-
-
         </div>
     )
   }
