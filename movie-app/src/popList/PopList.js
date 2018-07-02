@@ -30,7 +30,7 @@ class PopList extends Component {
   render(){
     let cantidad = this.props.cantidad
     const {loading, error, items} = this.state;
-      console.log(items)
+      //console.log(items)
     return(
       <div>
         {loading && <div><Loader/></div>}
