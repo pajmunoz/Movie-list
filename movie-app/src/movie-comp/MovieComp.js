@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import MyMovie from './../myMovie/MyMovie';
+//import MyMovie from './../myMovie/MyMovie';
 import NavBottom from '../navBottom/NavBottom';
 import Filter from '../filter/Filter';
 import PopList from '../popList/PopList';
