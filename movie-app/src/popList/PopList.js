@@ -3,7 +3,7 @@ import MyMovie from './../myMovie/MyMovie';
 import MyApi from './../api/api';
 import Loader from './../loader'
 
-const api_key='061148c37bc0940366ad8ed0e070a619';
+//const api_key='061148c37bc0940366ad8ed0e070a619';
 
 class PopList extends Component {
   constructor(props){
