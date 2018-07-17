@@ -13,7 +13,7 @@ class MyApi{
       },
     })
   }
-  getSomeData = (page = 1)=>(
+  getPopMovies = (page = 1)=>(
     this.axios.get('/movie/popular',{
       params:{page:page}
     })

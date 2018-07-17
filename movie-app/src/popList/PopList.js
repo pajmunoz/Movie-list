@@ -17,7 +17,7 @@ class PopList extends Component {
   }
   componentDidMount(){
       this.setState({loading:true, error:null});
-      this.api.getSomeData().then(res =>{
+      this.api.getPopMovies().then(res =>{
         this.setState({
           loading:false,
           error:null,
@@ -30,7 +30,7 @@ class PopList extends Component {
   render(){
     let cantidad = this.props.cantidad
     const {loading, error, items} = this.state;
-      console.log(items)
+      //console.log(items)
     return(
       <div>
         {loading && <div><Loader/></div>}

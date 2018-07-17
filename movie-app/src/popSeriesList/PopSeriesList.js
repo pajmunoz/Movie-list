@@ -31,7 +31,7 @@ class PopSeriesList extends Component {
   render(){
   let cantidad = this.props.cantidad
     const {loading, error, items} = this.state;
-      console.log(items)
+      //console.log(items)
     return(
       <div>
         {loading && <div><Loader/></div>}
@@ -40,7 +40,7 @@ class PopSeriesList extends Component {
           <div>
             <MyMovie seriesList={items.slice(0,cantidad).map(item => (
               <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.original_title}>
-                <img src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
+                <img  src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
               </div>
             ))}></MyMovie>
           </div>

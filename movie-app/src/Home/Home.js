@@ -4,6 +4,7 @@ import SearchComp from './../search/SearchComp';
 import MyList from './../myList/MyList';
 import PopList from './../popList/PopList';
 import PopSeriesList from './../popSeriesList/PopSeriesList';
+import Api from './../api/api';
 class Home extends Component{
   render(){
     return(
@@ -17,7 +18,7 @@ class Home extends Component{
               <a href="">Ver Todas</a>
             </small>
           </h5>
-          <PopList cantidad="6"/>
+          <PopList cantidad="6" list="/movie/popular"/>
           <h5>
             Series más populares
             <small className="text-muted pl-2">
