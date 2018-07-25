@@ -8,16 +8,16 @@ import NotFound from '../NotFound';
 
 import {Switch, Route,  NavLink} from 'react-router-dom';
 
-const menus=[
+/*const menus=[
   {enlace:"", name:"Home"},
   {enlace:"peliculas", name:"Peliculas"},
   {enlace:"series", name:"Series"},
   {enlace:"mi-lista", name:"Mi lista"}
-];
+];*/
 
 class NavComp extends Component {
   render(){
-    console.log(menus)
+    //console.log(menus)
     return(
 
         <div>
@@ -31,16 +31,16 @@ class NavComp extends Component {
                 <ul className="navbar-nav">
 
                   <li className="nav-item">
-                    <NavLink exact to="/" className="nav-link" activeClassname='active'>Home <span className="sr-only">(current)</span></NavLink>
+                    <NavLink exact to="/" className="nav-link" activeClassName='active'>Home <span className="sr-only">(current)</span></NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="/Peliculas" className="nav-link" activeClassname='active'>Peliculas</NavLink>
+                    <NavLink to="/Peliculas" className="nav-link" activeClassName='active'>Peliculas</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to="/Series" className="nav-link" activeClassname='active'>Series</NavLink>
+                    <NavLink to="/Series" className="nav-link" activeClassName='active'>Series</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to ="Mi-lista" className="nav-link" activeClassname='active'>Mi Lista</NavLink>
+                    <NavLink to ="Mi-lista" className="nav-link" activeClassName='active'>Mi Lista</NavLink>
                   </li>
                 </ul>
               </div>

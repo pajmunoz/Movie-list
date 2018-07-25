@@ -4,7 +4,7 @@ import SearchComp from './../search/SearchComp';
 import MyList from './../myList/MyList';
 import PopList from './../popList/PopList';
 import PopSeriesList from './../popSeriesList/PopSeriesList';
-import Api from './../api/api';
+//import Api from './../api/api';
 class Home extends Component{
   render(){
     return(

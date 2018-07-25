@@ -39,7 +39,7 @@ class PopSeriesList extends Component {
         {!!items.length &&
           <div>
             <MyMovie seriesList={items.slice(0,cantidad).map(item => (
-              <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.original_title}>
+              <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.id}>
                 <img  src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className="img-thumbnail"/>
               </div>
             ))}></MyMovie>

@@ -8,11 +8,11 @@ import {BrowserRouter as Router} from 'react-router-dom';
 class App extends Component{
   render(){
     return(
-      <div>
+      
         <Router>
           <NavComp/>
         </Router>
-      </div>
+    
     )
   }
 }

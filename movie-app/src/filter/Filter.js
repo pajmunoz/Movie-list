@@ -7,30 +7,30 @@ class Filter extends Component{
         <div className=" col-sm-6 col-md-3">
           <div className="input-group">
             <select className="custom-select" id="inputYear">
-              <option selected>Año</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option>Año</option>
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
             </select>
           </div>
         </div>
         <div className=" col-sm-6 col-md-3">
           <div className="input-group">
             <select className="custom-select" id="inputOrder">
-              <option selected>Ordenar por</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option>Ordenar por</option>
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
             </select>
           </div>
         </div>
         <div className=" col-sm-6 col-md-3">
           <div className="input-group">
             <select className="custom-select" id="inputGenre">
-              <option selected>Género</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option>Género</option>
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
             </select>
           </div>
         </div>
