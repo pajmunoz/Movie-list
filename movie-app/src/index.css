@@ -28,3 +28,26 @@ body {
     opacity: 0.5;
   }
 }
+
+.card-body.overflow {
+       position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1b1e21b5;
+    width: 85%;
+    height: 100%;
+    opacity: 0;
+ 
+    transition: .2s all;
+    margin: 0 auto;
+    color: white;
+}
+.card-body.overflow:hover{
+  opacity: 1;
+}
+p.card-text.boxi {
+    height: calc(100% - 100px);
+    overflow: hidden;
+    padding: 0 5px;
+}

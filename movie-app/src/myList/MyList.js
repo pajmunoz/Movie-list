@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MyMovie from './../myMovie/MyMovie'
+import {NavLink} from 'react-router-dom';
 
 class MyList extends Component {
 
@@ -9,7 +10,7 @@ class MyList extends Component {
         <h5>
           Mi Lista
           <small className="text-muted pl-2">
-            <a href="">Ver Todas</a>
+            <NavLink to ="/Mi-lista">Ver Todas</NavLink>
           </small>
         </h5>
         <div className="row">

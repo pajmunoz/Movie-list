@@ -5,6 +5,8 @@ import MyList from './../myList/MyList';
 import PopList from './../popList/PopList';
 import PopSeriesList from './../popSeriesList/PopSeriesList';
 //import Api from './../api/api';
+import {NavLink} from 'react-router-dom';
+
 class Home extends Component{
   render(){
     return(
@@ -15,14 +17,14 @@ class Home extends Component{
           <h5>
             Películas más populares
             <small className="text-muted pl-2">
-              <a href="">Ver Todas</a>
+              <NavLink to ="/Peliculas">Ver Todas</NavLink>
             </small>
           </h5>
           <PopList cantidad="6" list="/movie/popular"/>
           <h5>
             Series más populares
             <small className="text-muted pl-2">
-              <a href="">Ver Todas</a>
+              <NavLink to ="/Series">Ver Todas</NavLink>
             </small>
           </h5>
           <PopSeriesList cantidad="6"/>

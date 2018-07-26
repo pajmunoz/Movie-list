@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import SearchComp from './../search/SearchComp';
-import MovieComp from '../movie-comp/MovieComp';
+import PopList from '../popList/PopList';
+import NavBottom from '../navBottom/NavBottom';
+import Filter from '../filter/Filter';
 
 class Peliculas extends Component{
   render(){
@@ -8,7 +10,9 @@ class Peliculas extends Component{
         <div className="container">
           <SearchComp/>
           <h5>Peliculas</h5>
-          <MovieComp/>
+          <Filter/> 
+           <PopList/>
+          <NavBottom/>
         </div>
     )
   }

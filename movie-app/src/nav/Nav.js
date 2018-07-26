@@ -40,7 +40,7 @@ class NavComp extends Component {
                     <NavLink to="/Series" className="nav-link" activeClassName='active'>Series</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to ="Mi-lista" className="nav-link" activeClassName='active'>Mi Lista</NavLink>
+                    <NavLink to ="/Mi-lista" className="nav-link" activeClassName='active'>Mi Lista</NavLink>
                   </li>
                 </ul>
               </div>
