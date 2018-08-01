@@ -5,6 +5,7 @@ import Peliculas from './../peliculas/Peliculas';
 import Series from './../series/Series';
 import MiLista from './../miLista/MiLista'
 import NotFound from '../NotFound';
+import Detail from './../Detail/detail'
 
 import {Switch, Route,  NavLink} from 'react-router-dom';
 
@@ -52,6 +53,7 @@ class NavComp extends Component {
             <Route path="/peliculas" component={Peliculas} />
             <Route path="/series" component={Series} />
             <Route path="/mi-lista" component={MiLista} />
+            <Route path="/detail/:id" component={Detail} />
             <Route component={NotFound}/>
           </Switch>
 

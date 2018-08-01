@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import MyMovie from './../myMovie/MyMovie';
 import MyApi from './../api/api';
-import Loader from './../loader'
+import Loader from './../loader';
+import {Switch, Route,  NavLink, Link} from 'react-router-dom';
 
 //const api_key='061148c37bc0940366ad8ed0e070a619';
 
@@ -41,9 +42,9 @@ class PopList extends Component {
               <div className="col-12 col-sm-4 col-md-2 text-center mb-4" key={item.id}>
                 <img src={'https://image.tmdb.org/t/p/w500' + item.poster_path} alt="..." className=" img-thumbnail"/>
                 <div className="card-body overflow">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text boxi">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a className="btn btn-danger">Ver más</a>
+                  <h5 className="card-title">{item.title}</h5>
+                  <p className="card-text boxi">{item.overview}</p>
+                  <Link to={`/detail/${item.id}`} className="btn btn-danger">Ver más</Link>
                 </div>
               </div>
             ))}></MyMovie>
